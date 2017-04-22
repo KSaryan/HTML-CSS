@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Application Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1>Apply For A Postion With Us</h1>
+    <p>
+    We have several positions available. Please choose one below.
+    <br>Also, let us know your full name and salary requirements.
+    <br>We will contact you shortly (especially if you're cheap ;) )
+    </p> 
+
+    <form action="/application-success" method="POST">
+        First Name: <input type="text" name="firstname" required><br>
+        <span>Last Name: </span> <input type="text" name="lastname" required><br>
+        Salary Requirement: $<input type="number" name="salary" required><br>
+        Desired Position:
+        <select name="jobtitle">
+            <option value="softwareengineer">Software Engineer</option>
+            <option value="qaengineer">QA Engineer</option>
+            <option value="productmanager">Product Manager</option>
+        </select><br>
+        <input type="submit" name="Submit">
+    </form>
+
+</body>
+
+</html>
